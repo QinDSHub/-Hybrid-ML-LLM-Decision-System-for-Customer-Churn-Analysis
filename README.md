@@ -36,7 +36,7 @@ Chroma is used as the vector store for similarity search.
 
 For each customer profile in the validation set:
 
-•	Top-10 most similar customers are retrieved using cosine similarity
+•	Top-N most similar customers are retrieved using cosine similarity
 
 •	Retrieved profiles are provided to the LLM as RAG context for churn/retention reasoning based on customers in validation dataset.
 
