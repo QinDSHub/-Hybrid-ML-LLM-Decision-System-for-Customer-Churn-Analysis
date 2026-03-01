@@ -16,6 +16,8 @@ max_date = estimated_last_visit_date + median_visit_interval + 3-month buffer
 
 •	For feature engineering, a binning strategy aligned with business logic is applied to all features to normalize distributions and improve model stability and interpretability.
 
+•	The attached validation output is provided for reference. The query section reflects the feature engineering results. All data has been anonymized, so it is safe to review.
+
 ## Top-K Feature Extraction (GBDTs)
 
 LightGBM is employed for churn feature importance analysis, enabling downstream reasoning with a reduced and more informative feature set.
