@@ -18,9 +18,7 @@ Examples of passive visits include:<br>
 &emsp;•	Warranty-related services
 ________________________________________
 ## Additional Data Cleaning<br>
-Further cleaning was applied to noisy or problematic records:<br>
-&emsp;•	day_diff: Invalid records were removed<br>
-&emsp;•	mile_diff: Missing or abnormal values were imputed using the user's median daily mileage (day_speed_median)
+Further cleaning was applied to noisy or problematic records, such as removing invalid records (e.g., negative day differences) and imputed missing or abnormal values (e.g., mileage) using each user’s median daily metrics.
 ________________________________________
 ## Churn Labeling Strategy<br>
 Users who have not actively visited the service center for three years were labeled as: churn = 100%<br>
