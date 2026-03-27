@@ -1,5 +1,4 @@
 # Main Optimizations of Version 2 for the Customer Churn Analysis<br>
-### The codes including data processing, feature engineering, lgb model, llm data transforming and reasoning and metrics of Version 1 have been uploaded with comments of business logics, for the version 2 will be uploaded asap.<br><br>
 This version focuses on data quality improvements, feature engineering, and a hybrid retrieval-based prediction strategy.<br>
 
 ## Feature Cleaning: repair_type<br>
@@ -61,7 +60,8 @@ For each sample in the validation set:<br>
 &emsp;•	Assign the majority label as the final prediction, the threshold is set as 0.4 will get the best AUC with 0.936
 ________________________________________
 ## Result<br>
-Using this hybrid retrieval-based approach, the model achieved: AUC = 0.936
+Using this hybrid retrieval-based approach, the model achieved: AUC = 0.936，precision = 0.9256, recall = 0.9232, f1_score = 0.9244, accurate = 0.9383;
+
 ________________________________________
 ## Limitations and practical considerations<br>
 While the approach performs well in many scenarios, several practical considerations are worth highlighting.<br>
