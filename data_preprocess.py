@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 import pandas as pd
 import os,gc, math, json, argparse
 import numpy as np
@@ -220,10 +217,9 @@ if __name__ == '__main__':
     
     all_customer_df = stat_feat(args.path)
     new_repair_df = get_main_feat(args.path, all_customer_df)
-    get_features(new_repair_df, args.save_path)  # 修正：移除多余空格
+    get_features(new_repair_df, args.save_path)
 
 
-# In[ ]:
 
 
 
