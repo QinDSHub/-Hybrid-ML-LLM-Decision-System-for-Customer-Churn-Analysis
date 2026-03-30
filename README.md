@@ -51,9 +51,8 @@ Rather than using a purely black-box classifier, the system retrieves similar hi
 
 ## Modeling approach
 
-### 1. Data cleaning and filtering
+### Data cleaning and filtering
 The pipeline applies several business-driven cleaning steps, including:
-
 - further standardization of `repair_type`
 - not add internal vehicles into datasets to reduce bias
 - filtering out non-active service visits such as:
@@ -65,7 +64,7 @@ The pipeline applies several business-driven cleaning steps, including:
 - imputation of missing or abnormal values using user-level median daily metrics
 - users who had not actively returned to the service center for **three years** were labeled as churned and not put into model datasets for training or validation
 
-### 2. Feature engineering
+### Feature engineering
 The model combines both **numerical** and **textual** signals.
 
 #### Numerical features
@@ -78,7 +77,7 @@ Different preprocessing strategies were applied depending on feature distributio
 #### Text features
 Relevant textual attributes were converted into semantic vectors using an **OpenAI text embedding model**.
 
-### 4. Feature fusion
+### Feature fusion
 Numerical features and text embeddings were concatenated with weighting:
 
 - Numerical features: **70%**
@@ -86,7 +85,7 @@ Numerical features and text embeddings were concatenated with weighting:
 
 L2 normalization was then applied to ensure consistent vector scaling.
 
-### 5. Prediction strategy
+### Prediction strategy
 Instead of training a standard classifier, the system performs:
 
 1. cosine similarity retrieval of Top-k nearest users
