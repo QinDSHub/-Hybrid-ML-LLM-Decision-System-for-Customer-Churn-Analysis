@@ -126,7 +126,7 @@ However, from a modeling perspective, another promising direction is to better i
 - persuasive, human-readable explanations  
 - practical marketing or customer-retention recommendations  
 
-I previously explored several early versions of this idea. For example, I experimented with optimizing **binned numerical features** before feeding them into an LLM-style reasoning pipeline, based on testing with an offline **sentence-transformer** setup. I also tested a **sliding-window labeling strategy** to see whether a more dynamic target design could improve alignment between reasoning outputs and observed customer behavior.
+I also explored several versions of this idea based on version 1 and 2. For example, I experimented with optimizing **binned numerical features** before feeding them into an LLM-style reasoning pipeline, based on testing with an offline **sentence-transformer** setup. I also tested a **sliding-window labeling strategy** to see whether a more dynamic target design could improve alignment between reasoning outputs and observed customer behavior.
 
 While the explanation quality and business recommendations were often strong and practically meaningful, the reasoning outputs still showed a noticeable gap from the predefined **rule-based labels** and **sliding-window labels** across multiple evaluation metrics. Although the results were not yet strong enough to publish, I believe this remains a highly valuable direction for future exploration—especially for building systems that are not only accurate, but also interpretable and actionable in real business settings.
 
